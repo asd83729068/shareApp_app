@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<title>分享APP商城/手机绑定</title>
+		<meta name="keywords" content="分享APP商城" />
+		<meta name="description" content="分享APP商城" />
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta content="telephone=no" name="format-detection" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-store,must-revalidate" />
+		<meta http-equiv="Expires" content="0" />
+		<!--适配样式-->
+		<link rel="stylesheet" type="text/css" href="css/adapt.css">
+		<!--	<link rel="stylesheet" type="text/css" href="css/register_login.css">-->
+		<!-- 加载基本类库 -->
+		<style type="text/css">
+			.g-bd {
+				max-width: 780px;
+				margin: 0 auto;
+				padding: 0 0.88888rem;
+				position: relative;
+				overflow: hidden;
+				border-radius: 4px;
+			}
+			.g-bd .inputbox {
+				height: 2.2222rem;
+				line-height: 2.2222rem;
+				z-index: 19;
+				position: relative;
+				margin-bottom: 0px;
+				border: none;
+				display: flex;
+				padding-bottom: 1px;
+				border: 1px solid #F9F9F9;
+				background-color: #FEFEFF;
+				border-radius: 5px;
+				box-shadow: 1px 1px 15px 1px #E9F0F5;
+			}
+			.g-bd .u-input {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				position: relative;
+			}
+			
+			.u-input p {
+				/*position: absolute;
+				left: 1.33333rem;*/
+				width: 27%;
+				text-align: right;
+				font-size: 0.7916rem;
+				margin-right: 3%;
+				
+			}
+			.u-input input {
+				border: 0;
+				width: 60%;
+				background: none;
+				height: 1.2rem;
+				font-size: 0.8rem;
+				line-height: 1.2rem;
+				padding-left: 0;
+				-webkit-tap-highlight-color: transparent;
+				letter-spacing: normal;
+			}	
+			.phone{
+				/*position: absolute;
+				left: 5.083333rem;*/
+				/*margin-left: 5.083333rem;*/
+				font-size: 0.7916rem;
+			}
+			.password {
+				font-size: 0.7916rem;
+			}
+			
+			.pwdcomfirm {
+				font-size: 0.7916rem;
+			}
+			.u-input .verify_code{
+				width: 40%;
+				font-size: 0.7916rem;
+			}
+			
+			.loginbox {
+				margin-top: 1.27777rem;
+				display: flex;
+				align-items: center;
+				flex-flow: column;
+				justify-items: center;
+				margin-right: 2.6666rem;
+				margin-left: 2.66666rem;
+				margin-bottom: 10px;
+			}
+			
+			.u-loginbtn {
+				height: 2.22222rem;
+				font-size: 0.694444rem;
+				line-height: 2.222222rem;
+				border-radius: 5px;
+				width: 100%;
+				cursor: pointer;
+				text-align: center;
+				color: #fff;
+				background: #39CBFE;
+				box-shadow: 0px 6px 20px -5px #39CBFE;
+			}
+					
+			.ferrorhead {
+				width: 12rem;
+				margin-top: -3px;
+				color: #fa5b5b;
+				font-size: 12px;
+				line-height: 20px;
+				vertical-align: top;
+				word-break: break-all;
+			}
+			
+			.m-nerror {
+				margin-top: 16px;
+			}
+		</style>
+	
+	</head>
+
+	<body style="height: 100%; background-color: #f7f4fb;" id="reg1" data="reg1">
+		<div id="headerbox">
+		</div>
+		<div style="height: 1.7222222rem;"></div>
+		<div class="g-bd">
+			<div class="inputbox inputbox-new">
+				<div class="u-input">
+					<p>手机号：+86</p>
+					<input class="phone" name="mobile" id="mobile" type="text" autocomplete="off" tabindex="1" placeholder="请填写手机号" />
+				</div>
+			</div>
+			<span style="font-weight: bolder;margin-bottom: 0.58333rem;color: #F7C579;margin-left: 1.1111rem;font-size: 0.57738rem; height: 23px; display: inline-block;">请填写未注册的手机号，不可重复绑定，绑定后不可修改</span>
+			<div class="inputbox">
+				<div class="u-input">
+					<p>登录密码:</p>
+					<input class="password" id="password" type="password" autocomplete="off" tabindex="1" placeholder="7-12位数字，字母和符号" />
+				</div>
+			</div>
+			<div class="inputbox">
+				<div class="u-input">
+					<p>密码确认:</p>
+					<input class="pwdcomfirm" id="pwdcomfirm" type="password" autocomplete="off" tabindex="1" placeholder="再次输入密码" />
+				</div>
+			</div>
+			<span style="font-weight: bolder;margin-bottom: 0.58333rem;color: #F7C579;margin-left: 1.1111rem;font-size: 0.57738rem; height: 23px; display: inline-block;">该密码用于手机号登录</span>
+			<div class="inputbox">
+				<div class="u-input" style="position: relative;">
+					<p>验证码:</p>
+					<input class="verify_code" id="checkCode" type="text" autocomplete="off" tabindex="1" placeholder="请填写验证码" />
+					<img src="images/reg.png" style="width: 0.043rem; position:absolute;right: 5.16666rem;top: 0.25rem;" />
+					<input type="button" style="position: absolute; right: 1.08333rem;    border: 0;
+    font-size: 0.631rem;
+    text-align: center;
+    right: 1.08rem;width: 3.7rem;background-color: #FFFFFF;" onclick="check(this)" id="wz" value="获取验证码" />
+				</div>
+			</div>
+			<span style="font-weight: bolder;margin-bottom: 0.58333rem;color: #F7C579;margin-left: 1.1111rem;font-size: 0.57738rem; height: 23px; display: inline-block;">填写手机号后才能获得验证码哦</span>
+			<div class="m-nerror" style="display:none;" id="nerror">
+				<div class="ferrorhead" id="errinfo"></div>
+			</div>
+			<div class="f-cb loginbox">
+				<a id="btnSubmit" data-action="dologin" class="u-loginbtn">绑定</a>
+				<p style="color:#F7C579;margin-left: 0.28rem;
+    margin-right: 0.28rem;
+    font-size: 0.577rem;margin-top:0.805rem;text-align:center;">点击"绑定"按钮即表示你同意本应用的使用协议</p>
+			</div>
+		</div>
+
+		<!--<div id="aaaaaaaaaaaaaaaaaaaaaaa"></div>
+
+		<div style="height:2.5rem;"></div>
+		<div class="menu-max" style="display:none;">
+			<ul class="list" id="comm_menu">
+			</ul>
+		</div>-->
+
+		<!--公共底部    End-->
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/api.js"></script>
+		<script type="text/javascript" src="js/commpage_center.js"></script>
+		<script type="text/javascript" src="js/wcPop.js"></script>
+		<script type="text/javascript" src="js/phone_binding.js"></script>
+
+	</body>
+
+</html>

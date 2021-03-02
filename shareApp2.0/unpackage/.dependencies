@@ -1,0 +1,126 @@
+{
+  "setNewPassword.html": {
+    "href": "setNewPassword.html",
+    "resources": [],
+    "refer": [],
+    "priority": 4
+  },
+  "checkPhone.html": {
+    "href": "checkPhone.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "register2.html": {
+    "href": "register2.html",
+    "resources": [],
+    "refer": [],
+    "priority": 6
+  },
+  "register.html": {
+    "href": "register.html",
+    "resources": [],
+    "refer": [],
+    "priority": 5
+  },
+  "login.html": {
+    "href": "login.html",
+    "resources": [],
+    "refer": [],
+    "priority": 2
+  },
+  "changeIcon.html": {
+    "href": "changeIcon.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "changeOwnInfo.html": {
+    "href": "changeOwnInfo.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "center_userinfo.html": {
+    "href": "center_userinfo.html",
+    "resources": [],
+    "refer": [],
+    "priority": 1
+  },
+  "articleinfo.html": {
+    "href": "articleinfo.html",
+    "resources": [],
+    "refer": [],
+    "priority": 4
+  },
+  "articleslist.html": {
+    "href": "articleslist.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "myarticleslist.html": {
+    "href": "myarticleslist.html",
+    "resources": [],
+    "refer": [],
+    "priority": 2
+  },
+  "product_info.html": {
+    "href": "product_info.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "productslist.html": {
+    "href": "productslist.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "myproducts.html": {
+    "href": "myproducts.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "getMoney.html": {
+    "href": "getMoney.html",
+    "resources": [],
+    "refer": [],
+    "priority": 5
+  },
+  "my_withdraw.html": {
+    "href": "my_withdraw.html",
+    "resources": [],
+    "refer": [],
+    "priority": 4
+  },
+  "instructions.html": {
+    "href": "instructions.html",
+    "resources": [],
+    "priority": 5
+  },
+  "user_agreement.html": {
+    "href": "user_agreement.html",
+    "resources": [],
+    "priority": 6
+  },
+  "setting.html": {
+    "href": "setting.html",
+    "resources": [],
+    "refer": [],
+    "priority": 5
+  },
+  "my_center.html": {
+    "href": "my_center.html",
+    "resources": [],
+    "refer": [],
+    "priority": 1
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [],
+    "refer": [],
+    "priority": 0
+  }
+}

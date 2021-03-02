@@ -1,0 +1,222 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.am-share {
+	font-size: 14px;
+	border-radius: 0;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	text-align: center;
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: -webkit-transform 300ms;
+	transition: transform 300ms;
+	width: 100%;
+	z-index: 1110;
+}
+
+.am-modal-active {
+	transform: translateY(0px);
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0)
+}
+
+.am-modal-out {
+	z-index: 1109;
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%)
+}
+
+.am-share-title {
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #fff;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	color: #555;
+	font-weight: 400;
+	text-align: center;
+}
+
+
+/*.am-share-title::after { border-bottom: 1px solid #dfdfdf; content: ""; display: block; height: 0; margin-top: 10px; width: 100%; }
+*/
+
+.am-share-footer {}
+
+.am-share-footer .share_btn {
+	color: #555;
+	display: block;
+	width: 100%;
+	color: #FFFFFF;
+	background-color: #26BFFB;
+	border: 1px solid #e6e6e6;
+	border-radius: 0;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+	padding: 0.625em 0;
+	text-align: center;
+	transition: background-color 300ms ease-out 0s, border-color 300ms ease-out 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+	font-family: "微软雅黑";
+}
+
+.am-share-sns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFFFFF;
+	border-radius: 0 0 2px 2px;
+	padding-top: 1.194rem;
+	height: auto;
+	zoom: 1;
+	overflow: auto;
+}
+
+.am-share-sns span {
+	font-size: 0.5722rem;
+	text-align: center;
+}
+
+.am-share-sns li:nth-child(1) {
+	margin-bottom: 1.722rem;
+	display: block;
+	float: left;
+	height: auto;
+	margin-right: 1rem;
+}
+
+.am-share-sns li:nth-child(2) {
+	margin-bottom: 1.722rem;
+	display: block;
+	float: left;
+	height: auto;
+	margin-right: 1rem;
+}
+
+.am-share-sns li:nth-child(3) {
+	margin-bottom: 1.722rem;
+	display: block;
+	float: left;
+	height: auto;
+}
+
+.am-share-sns li:nth-child(4) {
+	margin-bottom: 1.722rem;
+	display: block;
+	float: left;
+	height: auto;
+	margin-left: 1rem;
+}
+.am-share-sns li:nth-child(5) {
+	margin-bottom: 1.722rem;
+	display: block;
+	float: left;
+	height: auto;
+	margin-left: 1rem;
+}
+
+.am-share-sns a {
+	color: #555;
+	display: block;
+	text-decoration: none;
+}
+
+.am-share-sns span {
+	display: block;
+}
+
+
+/*.am-share-sns .share-icon-weibo{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.am-share-sns li i {
+	justify-content: center;
+	align-items: center;
+	background-position: center 50%;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	background-color: #FFFFFF;
+	color: #fff;
+	display: flex;
+	height: 50px;
+	width: 50px;
+	margin-bottom: 0.638rem;
+	line-height: 36px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.am-share-sns li:nth-child(1) .share-icon-weibo {
+	background-image: url(../images/share/blue.png);
+	border-radius: 50px;
+	box-shadow:0 3px 15px -3px #48C8F7;
+}
+
+.am-share-sns li:nth-child(2) .share-icon-weibo {
+	border-radius: 50px;
+	background-image: url(../images/share/green.png);
+	box-shadow:0 3px 15px -3px #5AE4A8;
+}
+
+.am-share-sns li:nth-child(3) .share-icon-weibo {
+	border-radius: 50px;
+	background-image: url(../images/share/wechatQ2.png);
+	box-shadow:0 3px 15px -3px #707070;
+}
+
+.am-share-sns li:nth-child(4) .share-icon-weibo {
+	border-radius: 50px;
+	background-image: url(../images/share/red.png);
+	box-shadow:0 3px 15px -3px #F74861;
+}
+.am-share-sns li:nth-child(5) .share-icon-weibo {
+	border-radius: 50px;
+	background-image: url(../images/share/purple.png);
+	box-shadow:0 3px 15px -3px #8E47F1;
+}
+
+.am-share-sns img {
+	width: 1.2rem;
+}
+
+.sharebg {
+	background-color: rgba(0, 0, 0, 0.6);
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1100;
+	display: none;
+}
+
+.sharebg-active {
+	opacity: 1;
+	display: block;
+}
+
+.share {
+	border: dotted 1px #ddd;
+	display: block;
+	width: 100px;
+	text-align: center;
+	margin: 20px auto 0 auto;
+	cursor: pointer;
+	height: 60px;
+	line-height: 60px;
+}

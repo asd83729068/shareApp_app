@@ -1,0 +1,49 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{ padding:0; 
+	font-family:"Microsoft YaHei";
+    margin: 0;
+    
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+time, mark, audio, video{ margin:0; padding:0; border:0; font-size:100%; text-decoration:none; }
+body { background-color:#f4f4f4;
+}
+
+html { line-height:1; }
+q, blockquote { quotes:none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; content:none; }
+a img { border:none; }
+ol, ul { list-style:none; }
+table { border-collapse:collapse; border-spacing:0; }
+.clear{ clear:both; font-size:0px; height:0px; overflow:hidden; }
+.left{ float:left; }
+.right{ float:right; }
+.hide { display:none;}
+.show { display:block;}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a {
+    color: #757575;
+    text-decoration: none;
+}
+    .clearfix:before, .clearfix:after {
+        content: " ";
+        display: table;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    

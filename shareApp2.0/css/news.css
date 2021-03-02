@@ -1,0 +1,23 @@
+﻿.title {
+       text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top:10px;
+    color: #4b4d4f;
+}
+
+.datetime {
+    text-align:center;
+    font-size: 12px;
+    line-height: 25px;
+    color: #a5a5a5;
+}
+
+.context {
+    margin-top:20px;
+    height:auto;
+}
+
+.context img{
+    width:100%;
+}

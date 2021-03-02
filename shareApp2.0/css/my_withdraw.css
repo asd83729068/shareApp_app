@@ -1,0 +1,129 @@
+
+.withdarw-header{
+	padding: 1rem 0.8888rem;
+	position: relative;
+	padding-bottom: 19.2%;
+}
+.withdarw-container{  
+    width: 100%;  
+    position:relative;  
+    z-index:0;  
+} 
+.container-bo{
+	width: 24%;
+	position: relative;
+	margin: auto;
+	bottom: 0rem;
+	z-index: 3;
+}
+.container-bo img{
+	position:absolute;
+	width: 100%;
+	top: -1.83333rem;
+}
+.container-zfb{
+	width: 16%;
+	position: relative;
+	margin: auto;
+	bottom: 0rem;
+	z-index: 3;
+}
+.container-zfb img{
+	position:absolute;
+	width: 100%;
+	top: -1.55rem;
+}
+.withdarw-yu{
+	width: 100%;
+	position: absolute;
+	z-index: 3;
+	top: -3.6rem;
+}
+.withdarw-span{
+	text-align: center;
+	z-index: 4;
+	color: #FFFFFF;
+}
+
+.withdarw-container img:nth-child(1){  
+    position:absolute;  
+    width:100%;  
+    margin:auto;  
+    z-index: 2; 
+    box-shadow:6px 8px 20px #5BCCFD;
+}
+.withdarw-container2{  
+    width: 100%;
+    position:relative; 
+    z-index:1;  
+}  
+.withdarw-container2 img{  
+    position:absolute;
+    width:100%;
+    margin:auto;
+    z-index: 1;
+    
+}
+
+.withdarw-container2 img:nth-child(4){
+	box-shadow:3px 4px 30px #5BCCFD;
+}
+/*以下body金额*/
+
+.withdarw-body{
+	padding-left:0.88888rem;
+	padding-right:0.88888rem;
+	font-size: 0.597222rem;
+	position: relative;
+	width: 91%;
+}
+.withdarw-ul{
+	/*position: absolute;*/
+	width: 100%;
+	color: #5BCCFD;
+}
+.withdarw-ul li{
+	height: 2.3611111rem;
+	line-height: 2.3611111rem;
+	border-bottom: #333333 dashed thin
+}
+.withdarw-ul div:nth-child(1){
+	width: 33%;
+	text-align: left;
+	padding-left: 1rem;
+}
+.withdarw-ul div:nth-child(2){
+	width: 26%;
+}
+.withdarw-ul div:nth-child(3){
+	text-align: right;
+	width: 26%;
+}
+.withdarw-ul div{
+	float: left;
+	text-align: center;
+	overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.withdarw-li-header{
+	color: #5BCCFD;
+}
+.withdarw-li-header div{
+	color: #545353;
+	font-size: 0.597222rem;
+}
+.withdarw-time{
+	
+}
+.withdarw-price{
+	
+}
+.withdarw-status{
+	
+}
+
+.mywithdraw-bottom{
+	background: #FFFFFF;
+	margin-top: 1.2222222rem;
+}

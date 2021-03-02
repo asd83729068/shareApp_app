@@ -1,0 +1,580 @@
+{
+  "login.html": {
+    "refer": [
+      "index.html",
+      "register.html",
+      "my_center.html",
+      "articleslist.html",
+      "product_info.html",
+      "center_userinfo.html",
+      "articleinfo.html",
+      "productslist.html",
+      "checkPhone.html",
+      "register2.html",
+      "changeOwnInfo.html",
+      "setNewPassword.html",
+      "login.html",
+      "phone_binding.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/register_login3.css",
+      "js/jquery-1.11.2.min.js",
+      "js/common.js",
+      "js/jquery.cookie.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/login.js",
+      "js/wcPop.js",
+      "css/images/aqi.png",
+      "css/images/phone.png",
+      "css/images/password.png",
+      "product_info.html",
+      "js/mui.min.js",
+      "js/skin/wcPop.css"
+    ]
+  },
+  "index.html": {
+    "refer": [
+      "my_center.html",
+      "articleslist.html",
+      "productslist.html",
+      "product_info.html",
+      "articleinfo.html",
+      "index.html",
+      "login.html"
+    ],
+    "resources": [
+      "articleinfo.html",
+      "product_info.html",
+      "js/index.js",
+      "css/index.css",
+      "css/j.swiper.css",
+      "css/adapt.css",
+      "css/box_orthogon.css",
+      "css/productlist.css",
+      "css/articleslist.css",
+      "css/share.css",
+      "js/jquery-1.11.2.min.js",
+      "js/common.js",
+      "js/jquery.cookie.js",
+      "js/j.swiper.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "images/icon/backto.png",
+      "css/images/heng.png",
+      "css/images/rou.png",
+      "css/images/share.png",
+      "css/images/in.png",
+      "js/share.js",
+      "css/images/juxing9.png",
+      "css/images/allowShare.png",
+      "css/images/more.png",
+      "css/images/allowshareCom.png",
+      "images/share/xian.png",
+      "css/images/ls.png",
+      "css/images/wz@2x.png",
+      "css/images/articles@2x.png",
+      "css/images/articles2.png",
+      "css/images/back5.png",
+      "css/images/juxing5.png",
+      "css/images/mychang.png",
+      "css/images/product@2x.png",
+      "css/images/sharechang.png",
+      "css/images/zsyy.png",
+      "css/images/juxing52.png",
+      "css/images/info3.png",
+      "css/images/mine@2x.png",
+      "css/images/myinfo.png",
+      "css/images/back6.png",
+      "images/share/qq@2x.png",
+      "images/share/weixin.png",
+      "images/share/weibo.png",
+      "images/share/link.png",
+      "js/mui.min.js",
+      "images/defaultP.png",
+      "images/shareline.png"
+    ]
+  },
+  "my_center.html": {
+    "refer": [
+      "index.html",
+      "productslist.html",
+      "articleslist.html",
+      "my_withdraw.html",
+      "center_userinfo.html",
+      "myarticleslist.html",
+      "login.html",
+      "myproducts.html",
+      "changeIcon.html",
+      "setting.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/my_center.css",
+      "js/jquery-1.11.2.min.js",
+      "js/jquery.cookie.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/my_center.js",
+      "images/woman.png",
+      "images/boy.png",
+      "images/touxiang.png",
+      "images/info2.png",
+      "images/jiantou.png",
+      "images/wz22.png",
+      "images/sp22.png",
+      "images/xianjin22.png",
+      "images/outlogin.png",
+      "myarticleslist.html",
+      "js/mui.min.js",
+      "images/icon_woman.jpg",
+      "images/icon_man.jpg",
+      "js/wcPop.js",
+      "images/setting.png",
+      "js/skin/wcPop.css"
+    ]
+  },
+  "articleslist.html": {
+    "refer": [
+      "index.html",
+      "productslist.html",
+      "my_center.html",
+      "articleinfo.html",
+      "login.html",
+      "articleslist.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/box_orthogon.css",
+      "css/articleslist.css",
+      "css/share.css",
+      "css/mescroll.min.css",
+      "js/jquery-1.11.2.min.js",
+      "js/common.js",
+      "js/jquery.cookie.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/mescroll.min.js",
+      "js/articleslist.js",
+      "images/mescroll-empty.png",
+      "images/mescroll-totop.png",
+      "css/images/rou.png",
+      "css/images/share.png",
+      "css/images/in.png",
+      "js/share.js",
+      "css/images/juxing9.png",
+      "css/images/allowShare.png",
+      "images/share/xian.png",
+      "images/share/qq@2x.png",
+      "images/share/weixin.png",
+      "images/share/weibo.png",
+      "images/share/link.png",
+      "js/mui.min.js",
+      "images/defaultP.png",
+      "images/shareline.png"
+    ]
+  },
+  "productslist.html": {
+    "refer": [
+      "articleslist.html",
+      "index.html",
+      "my_center.html",
+      "product_info.html",
+      "login.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/productlist.css",
+      "css/mescroll.min.css",
+      "js/jquery-1.11.2.min.js",
+      "js/jquery.cookie.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/mescroll.min.js",
+      "js/productlist.js",
+      "images/mescroll-empty.png",
+      "images/mescroll-totop.png",
+      "css/images/heng.png",
+      "css/images/juxing9.png",
+      "css/images/allowshareCom.png",
+      "js/mui.min.js",
+      "images/defaultP.png"
+    ]
+  },
+  "product_info.html": {
+    "refer": [
+      "index.html",
+      "productslist.html",
+      "myproducts.html",
+      "login.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/product_info.css",
+      "css/share.css",
+      "js/jquery-1.11.2.min.js",
+      "js/jquery.cookie.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/product_info.js",
+      "js/share2.js",
+      "images/proline.png",
+      "css/images/b2.png",
+      "css/images/wz.png",
+      "images/shareline.png",
+      "css/images/b8.png",
+      "images/share/qq@2x.png",
+      "images/share/weixin.png",
+      "images/share/weibo.png",
+      "images/share/link.png",
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "images/defaultP.png"
+    ]
+  },
+  "articleinfo.html": {
+    "refer": [
+      "index.html",
+      "myarticleslist.html",
+      "articleslist.html",
+      "login.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/articleinfo.css",
+      "css/share.css",
+      "js/jquery-1.11.2.min.js",
+      "js/common.js",
+      "js/jquery.cookie.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/articleinfo.js",
+      "js/share.js",
+      "css/images/hengju.png",
+      "css/images/wz.png",
+      "images/share/xian.png",
+      "images/share/qq@2x.png",
+      "images/share/weixin.png",
+      "images/share/weibo.png",
+      "images/share/link.png",
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "images/shareline.png"
+    ]
+  },
+  "my_withdraw.html": {
+    "refer": [
+      "my_center.html",
+      "getMoney.html",
+      "index.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/my_center.css",
+      "css/my_withdraw.css",
+      "js/jquery-1.11.2.min.js",
+      "js/jquery.cookie.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/my_withdraw.js",
+      "js/DateFormat.js",
+      "css/images/b3.png",
+      "css/images/my.png",
+      "css/images/rou2.png",
+      "css/images/tixian.png",
+      "js/mui.min.js"
+    ]
+  },
+  "myarticleslist.html": {
+    "refer": [
+      "my_center.html",
+      "articleslist.html",
+      "articleinfo.html",
+      "index.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/box_orthogon.css",
+      "css/myarticleslist.css",
+      "css/mescroll.min.css",
+      "js/jquery-1.11.2.min.js",
+      "js/jquery.cookie.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/mescroll.min.js",
+      "js/myarticleslist.js",
+      "images/mescroll-empty.png",
+      "images/mescroll-totop.png",
+      "js/mui.min.js"
+    ]
+  },
+  "center_userinfo.html": {
+    "refer": [
+      "changeOwnInfo.html",
+      "my_center.html",
+      "index.html",
+      "login.html",
+      "productslist.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/center_main.css",
+      "css/j.AreaSelectdialog.css",
+      "css/j.AreaSelect.css",
+      "css/ui-dialog.css",
+      "js/jquery-1.11.2.min.js",
+      "js/common.js",
+      "js/jquery.cookie.js",
+      "js/AreaSelect.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/center_userinfo2.js",
+      "images/ownInfo/icon-head.png",
+      "images/ownInfo/info.png",
+      "images/ownInfo/article.png",
+      "images/ownInfo/sex.png",
+      "images/ownInfo/map.png",
+      "images/ownInfo/key.png",
+      "images/ownInfo/alipay.png",
+      "js/mui.min.js"
+    ]
+  },
+  "changeOwnInfo.html": {
+    "refer": [
+      "my_center.html",
+      "center_userinfo.html",
+      "changeIcon.html",
+      "login.html",
+      "changeOwnInfo.html",
+      "productslist.html",
+      "index.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/center_main.css",
+      "css/j.AreaSelectdialog.css",
+      "css/j.AreaSelect.css",
+      "css/ui-dialog.css",
+      "css/mobileSelect.css",
+      "js/mobileSelect.js",
+      "js/jquery-1.11.2.min.js",
+      "js/common.js",
+      "js/wcPop.js",
+      "js/jquery.cookie.js",
+      "js/AreaSelect.js",
+      "js/AreaSelectdialog.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/center_userinfo.js",
+      "js/address.js",
+      "images/ownInfo/icon-head.png",
+      "images/ownInfo/info.png",
+      "images/ownInfo/article.png",
+      "images/ownInfo/sex.png",
+      "images/ownInfo/map.png",
+      "images/ownInfo/key.png",
+      "images/ownInfo/alipay.png",
+      "js/mui.min.js"
+    ]
+  },
+  "changeIcon.html": {
+    "refer": [
+      "changeOwnInfo.html",
+      "my_center.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/center_main.css",
+      "css/j.AreaSelectdialog.css",
+      "css/j.AreaSelect.css",
+      "css/ui-dialog.css",
+      "js/jquery-1.11.2.min.js",
+      "js/common.js",
+      "js/jquery.cookie.js",
+      "js/AreaSelect.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/wcPop.js",
+      "js/mui.min.js"
+    ]
+  },
+  "register.html": {
+    "refer": [
+      "login.html",
+      "index.html",
+      "register2.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/register_login.css",
+      "js/jquery-1.11.2.min.js",
+      "js/jquery.cookie.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/register.js",
+      "images/reg.png",
+      "js/mui.min.js",
+      "js/wcPop.js"
+    ]
+  },
+  "myproducts.html": {
+    "href": "myproducts.html",
+    "resources": [
+      "css/adapt.css",
+      "css/myproducts.css",
+      "css/mescroll.min.css",
+      "js/jquery-1.11.2.min.js",
+      "js/jquery.cookie.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/mescroll.min.js",
+      "js/myproducts.js",
+      "images/mescroll-empty.png",
+      "images/mescroll-totop.png",
+      "js/mui.min.js"
+    ],
+    "refer": [
+      "productslist.html",
+      "product_info.html",
+      "my_center.html",
+      "index.html"
+    ],
+    "priority": 0
+  },
+  "getMoney.html": {
+    "href": "getMoney.html",
+    "resources": [
+      "css/adapt.css",
+      "css/getMoney.css",
+      "js/jquery-1.11.2.min.js",
+      "js/common.js",
+      "js/jquery.cookie.js",
+      "js/wcPop.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/getMoney.js",
+      "images/icon/alipay.png",
+      "images/icon/money.png",
+      "images/back2.png",
+      "js/mui.min.js"
+    ],
+    "refer": [
+      "my_withdraw.html",
+      "productslist.html",
+      "index.html",
+      "my_center.html"
+    ],
+    "priority": 0
+  },
+  "checkPhone.html": {
+    "refer": [
+      "index.html",
+      "setNewPassword.html",
+      "login.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/register_login.css",
+      "js/jquery-1.11.2.min.js",
+      "js/mui.min.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/wcPop.js",
+      "js/checkPhone.js",
+      "images/reg.png"
+    ]
+  },
+  "register2.html": {
+    "refer": [
+      "login.html",
+      "index.html",
+      "register.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/register_login2.css",
+      "js/jquery-1.11.2.min.js",
+      "js/mui.min.js",
+      "js/jquery.cookie.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/wcPop.js",
+      "js/register2.js"
+    ]
+  },
+  "setNewPassword.html": {
+    "refer": [
+      "login.html",
+      "index.html",
+      "checkPhone.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/setPassword.css",
+      "js/jquery-1.11.2.min.js",
+      "js/jquery.cookie.js",
+      "js/wcPop.js",
+      "js/api.js",
+      "js/mui.min.js",
+      "js/commpage_center.js",
+      "js/setPassword.js"
+    ]
+  },
+  "setting.html": {
+    "refer": [
+      "my_center.html",
+      "user_agreement.html",
+      "instructions.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/setting.css",
+      "js/jquery-1.11.2.min.js",
+      "js/mui.min.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/setting.js",
+      "js/DateFormat.js"
+    ]
+  },
+  "user_agreement.html": {
+    "refer": [
+      "setting.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/articleinfo.css",
+      "css/share.css",
+      "css/mui.min.css",
+      "js/jquery-1.11.2.min.js",
+      "js/mui.min.js",
+      "js/jquery.cookie.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/user_agreement.js"
+    ]
+  },
+  "instructions.html": {
+    "refer": [
+      "setting.html"
+    ],
+    "resources": [
+      "css/adapt.css",
+      "css/articleinfo.css",
+      "css/mui.min.css",
+      "js/jquery-1.11.2.min.js",
+      "js/mui.min.js",
+      "js/jquery.cookie.js",
+      "js/api.js",
+      "js/commpage_center.js",
+      "js/instructions.js"
+    ]
+  },
+  "phone_binding.html": {
+    "refer": [
+      "login.html",
+      "index.html"
+    ]
+  }
+}

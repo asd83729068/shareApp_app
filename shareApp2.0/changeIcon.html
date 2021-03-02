@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>51纷享</title>
+    <meta name="keywords" content="51纷享" />
+    <meta name="description" content="51纷享" />
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-store,must-revalidate" />
+    <meta http-equiv="Expires" content="0" />
+    <!--适配样式-->
+    <link rel="stylesheet" type="text/css" href="css/adapt.css">
+    <link rel="stylesheet" type="text/css" href="css/center_main.css">
+
+    <!-- 加载QQ客服 -->
+    <script charset="utf-8" src="http://wpa.b.qq.com/cgi/wpa.php"></script>
+    <link href="css/j.AreaSelectdialog.css" rel="stylesheet" />
+    <link href="css/j.AreaSelect.css" rel="stylesheet" />
+    <link href="css/ui-dialog.css" rel="stylesheet" />
+   <script type="text/javascript" src="js/mui.min.js"></script>
+	
+	<script type="text/javascript">
+		mui.back=function () {
+               window.location.href="changeOwnInfo.html"
+        }
+	</script>
+	</script>
+<style>
+			
+			
+			.logo img {
+				display: block;
+				margin: 0 auto;
+				width: 100%;
+    border-radius: 150px;
+    height: 100%;
+			}
+			
+			.upload {
+				font-size: 0.689814rem;
+				position: relative;
+				width: 9rem;
+				height: 2rem;
+				top: 1rem;
+    			line-height: 2rem;
+				background: #2fc7c9;
+				text-align: center;
+				color: #FFF;
+				padding: 0px 5px;
+				-webkit-border-radius: 2px;
+				border-radius: 2px;
+				margin: 0 auto;
+			}
+			
+			.upload form {
+				width: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				opacity: 0;
+				filter: alpha(opacity=0);
+			}
+			
+			.upload form input {
+				width: 100%;
+			}
+			
+			.down{
+				margin-top: 2rem;
+			}
+			.logo{
+				width: 300px;
+				height: 300px;
+				    margin-top: 1rem;
+			}
+			.box{
+				display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-flow: column;
+			}
+		</style>
+    
+</head>
+<body style="background-color:#F8F4FC;">
+    <div id="headerbox"></div>
+
+
+   
+        <div class="box">
+			<div class="logo">
+				<img src="" id="logo" style="width: 100%;" />
+			</div>
+			<div class="upload">
+				<p>上传图片</p>
+				<form id="uploadForm" enctype="multipart/form-data">
+					<input id="upload" type="file" name="file" />
+				</form>
+			</div>
+		</div>
+
+   
+
+
+    <div class="addressbtn down" id="confirm" style="font-size: 0.689814rem;">
+    修改头像信息
+    </div>
+<!--<div style="height:9.5277777rem;"></div>-->
+<div class="menu-max">
+        <ul class="list" id="comm_menu">
+        </ul>
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/mui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script  type="text/javascript" src="js/AreaSelect.js"></script>
+    <!--<script  type="text/javascript" src="js/AreaSelectdialog.js"></script>-->
+    <script type="text/javascript" src="js/api.js"></script>
+    <script type="text/javascript" src="js/commpage_center.js"></script>
+ 	<script type="text/javascript" src="js/wcPop.js"></script>
+<script>
+	mui.back = function() {
+		window.location.href="my_center.html";
+	}
+	
+	$(function(){
+		$("#headlinetitle").html("个人头像");
+
+	$("#foot_line_btn_4").addClass("on");
+	});
+	
+	
+	
+	var logoUrl = sessionStorage.getItem("icon");
+			$(function() {
+			
+				var count=logoUrl.indexOf('?x-oss-process=image/resize,m_lfit,h_300,w_300/circle,r_300/format,png');
+				if(count>0){
+					var val=logoUrl.substring(0,count)+"?x-oss-process=image/resize,m_lfit,h_600,w_600/circle,r_600/format,png";
+					
+					$("#logo").attr("src",val);
+				}else{
+					$("#logo").attr("src", logoUrl);
+				}
+			});
+
+			$("#upload").on('change', doUpload);
+			var newIcon=logoUrl;
+			function doUpload() {
+				
+				var iMaxFilesize = 2097152; //2M
+				var oFile = document.getElementById('upload').files[0]; //读取文件
+				var rFilter = /^(image\/bmp|image\/gif|image\/jpeg|image\/png|image\/tiff)$/i;
+				if(!rFilter.test(oFile.type)) {
+					
+					wcPop({
+				content: '文件格式必须为图片',
+				shade: true,
+				style: 'background: rgba(17,17,17,.7); color: #fff;font-size:13px;width:200px',
+				time: 2
+			});
+					return;
+				}
+				if(oFile.size > iMaxFilesize) {
+					
+					wcPop({
+				content: '图片大小不能超过2M',
+				shade: true,
+				style: 'background: rgba(17,17,17,.7); color: #fff;font-size:13px;width:200px',
+				time: 2
+			});
+					return;
+				}
+
+				var formData = new FormData($('#uploadForm')[0]);
+			
+				$.ajax({
+					type: 'post',
+					url:  $.cookie("tempUrl")+"/file/uploadImage?token="+$.cookie("token"),
+					data: formData,
+					cache: false,
+					processData: false,
+					contentType: false,
+				}).success(function(data) {
+					newIcon=data.data+"?x-oss-process=image/resize,m_lfit,h_300,w_300/circle,r_300/format,png";
+					$("#logo").attr("src", data.data+"?x-oss-process=image/resize,m_lfit,h_600,w_600/circle,r_600/format,png");
+				}).error(function() {
+					
+					wcPop({
+				content: '上传失败',
+				shade: true,
+				style: 'background: rgba(17,17,17,.7); color: #fff;font-size:13px;width:200px',
+				time: 2
+			});
+				});
+			}
+			
+			$("#confirm").click(function(){
+				var icon=$("#logo").attr("src");
+				if(icon==null){
+					wcPop({
+				content: '请添加图片',
+				shade: true,
+				style: 'background: rgba(17,17,17,.7); color: #fff;font-size:13px;width:200px',
+				time: 2
+			});
+				}
+				
+				$.ajax({
+					url:  $.cookie("tempUrl")+"/Member/updateIcon.do?token="+$.cookie("token"),
+                    type: "POST",
+        			datatype: "application/json",
+        			contentType: "application/json;charset=utf-8",
+                    data: JSON.stringify({
+                          icon: newIcon ,
+  						  id: $.cookie("id")
+                    }),
+                    success: function (result) {
+                        if (result.code == 0) {
+                        	
+                            wcPop({
+								content: "修改头像成功！",
+								shade: true,
+								style: 'background: rgba(17,17,17,.7); color: #fff;font-size:13px;width:200px',
+								time: 2
+							});
+							 setTimeout(function () {
+                                window.location.href = "my_center.html";
+                            }, 1000);
+               	
+                        } else {
+                            wcPop({
+								content: "修改头像失败！",
+								shade: true,
+								style: 'background: rgba(17,17,17,.7); color: #fff;font-size:13px;width:200px',
+								time: 3
+							});
+                    		
+                        }
+                    }
+				})
+				
+			})
+		</script>
+</body>
+
+</html>
+

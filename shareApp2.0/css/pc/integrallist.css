@@ -1,0 +1,221 @@
+﻿.content {
+    padding: 20px 0 50px;
+    background: #f5f5f5;
+}
+
+
+
+
+.filter-box {
+    padding: 10px 0;
+}
+
+
+
+
+
+.filter-list-wrap {
+    position: relative;
+}
+
+
+.filter-list, .selected-list {
+    position: relative;
+    padding-left: 70px;
+    min-height: 45px;
+    margin: 0;
+}
+
+    .filter-list dt, .selected-list dt {
+        position: absolute;
+        left: 0;
+        top: 11px;
+        width: 72px;
+        color: #b0b0b0;
+    }
+
+    .filter-list dd, .selected-list dd {
+        float: left;
+        margin: 0;
+    }
+
+.filter-list {
+    width: 1032px;
+    height: 45px;
+    overflow: hidden;
+    _zoom: 1;
+    -webkit-transition: height .3s ease-in;
+    transition: height .3s ease-in;
+}
+
+    .filter-list dd {
+        width: 130px;
+        padding: 12px 0;
+        text-align:center;
+    }
+
+        .filter-list dd .active {
+            color: #ff6700;
+        }
+
+    .filter-list a {
+        color: #424242;
+    }
+
+        .filter-list a:hover {
+            color: #ff6700;
+        }
+
+
+
+
+.goods-list-box {
+    width: 1226px;
+}
+
+.goods-list {
+    width: 1240px;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+
+.goods-item {
+    position: relative;
+    float: left;
+    width: 234px;
+    height: 315px;
+    margin-right: 14px;
+    margin-bottom: 14px;
+    text-align: center;
+    background: #fff;
+    -webkit-transition: -webkit-box-shadow .2s linear;
+    transition: box-shadow .2s linear;
+}
+
+    .goods-item:hover {
+        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    
+    .goods-item .desc {
+        margin: 0 0 3px;
+        height: 18px;
+        font-size: 12px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        _zoom: 1;
+        color: #b0b0b0;
+    }
+
+    .goods-item .title {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 400;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align:left;
+        _zoom: 1;
+        padding:10px 20px;
+    }
+
+        .goods-item .title a {
+            color: #424242;
+        }
+ .goods-item .subtitle {
+        margin: 0;
+        margin-top:7px;
+        margin-bottom:13px;
+        text-align:left;
+        font-size: 13px;
+        font-weight: 400;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        _zoom: 1;
+        height:20px;
+        line-height:20px;
+        padding:0 20px;
+    }
+
+        .goods-item .subtitle a {
+            color: #e53935;
+        }
+
+          .goods-item .price {
+        margin: 0 0 0 20px;
+        color: #ff6700;
+        line-height:25px;
+        float:left;
+    }
+
+        .goods-item .price del {
+            color: #b0b0b0;
+            font-size:14px;
+            padding-left:10px;
+            
+        }
+
+         .goods-item .commit {
+        margin: 0 20px 0 0;
+        color: #bfbfbf;
+        line-height:25px;
+        float:right;
+        font-size:12px;
+    }
+    .goods-item .flags {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+        max-height: 40px;
+        font-size: 12px;
+        text-align: left;
+        overflow: hidden;
+        text-align:center;
+        _zoom: 1;
+    }    .goods-item .flags .flag {
+            height: 18px;
+            padding: 1px 20px;
+            color: #fff;
+            line-height:18px;
+        }
+
+        .goods-item .flags .flag-new {
+            background-color: #83c44e;
+        }
+
+        .goods-item .flags .flag-saleoff {
+            background-color: #e53935;
+        }
+
+        .goods-item .flags .flag-postfree {
+            background-color: #ffac13;
+        }
+        
+        .goods-item .flags .flag-gift {
+            background-color: #2196f3;
+        }
+        .goods-item .flags .flag-none {
+            background-color: #ccc;
+        }
+
+          .goods-item .figure-img {
+        width: 214px;
+        height: 214px;
+        margin:  10px;
+    }
+
+        .goods-item .figure-img a {
+            display: block;
+        }
+
+        .goods-item .figure-img img {
+            width: 214px;
+            height: 214px;
+        }

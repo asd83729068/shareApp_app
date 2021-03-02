@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<title>分享APP商城</title>
+		<meta name="keywords" content="分享APP商城" />
+		<meta name="description" content="分享APP商城" />
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta content="telephone=no" name="format-detection" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-store,must-revalidate" />
+		<meta http-equiv="Expires" content="0" />
+		<!--适配样式-->
+		<link rel="stylesheet" type="text/css" href="css/adapt.css">
+		<link rel="stylesheet" type="text/css" href="css/getMoney.css">
+		
+	</head>
+
+	<body style="height: 100%; background-color: #f7f4fb;">
+		<div id="headerbox">
+		</div>
+		<div style="height: 1.5888rem;"></div>
+		<div class="g-bd">
+			<div class="inputbox">
+				<div class="u-input2">
+					<img src="images/icon/alipay.png" style="width: 1.277rem; margin-left: 1.30rem;" />
+					<p id="p_phone">支付宝账号 :</p>
+					<input id="alipayAccount" autocomplete="off" tabindex="1" readonly="readonly" />
+				</div>
+			</div>
+			<span style="font-weight: bolder;color: #F7C579;margin-left:2rem;font-size: 0.57738rem;">奖励金余额：￥<span id="totalMoney">900</span> （可提现金额：<span id="availMoney">700</span>）</span>
+			<div class="inputbox" style="margin-bottom: 0.5rem;">
+				<div class="u-input2">
+					<img src="images/icon/money.png" style="width: 0.944rem;margin-left: 1.30rem;" />
+					<p id="p_phone">提现金额 :</p>
+					<input id="money" autocomplete="off" tabindex="1" placeholder="请输入你的金额(10元起)" />
+
+				</div>
+			</div>
+
+			<div class="m-nerror" style="display:none;" id="nerror">
+				<div class="ferrorhead" id="errinfo"></div>
+			</div>
+			<span style="font-weight: bolder;color: #F7C579;margin-left:2rem;font-size: 0.57738rem;">温馨提示：72小时内仅限提现一次</span>
+			<div class="f-cb loginbox" id="btnSubmit" style="background-image: url(images/back2.png);background-repeat: no-repeat;height: 2rem;">
+				<span style="width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 0.68rem;">提现</span>
+			</div>
+
+			<div class="m-unlogin clearfix">
+				<!-- <a href="#" style=" float:left;" >忘记密码</a>-->
+				<!--<a  style="float:right;" href="login.html">登录</a>-->
+			</div>
+		</div>
+
+		<div style="height:15.80rem;"></div>
+		<div class="menu-max">
+			<ul class="list" id="comm_menu">
+			</ul>
+		</div>
+
+		<!--公共底部    End-->
+		<!-- 加载QQ客服 -->
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/wcPop.js"></script>
+		<script type="text/javascript" src="js/api.js"></script>
+		<script type="text/javascript" src="js/commpage_center.js"></script>
+		<script type="text/javascript" src="js/getMoney.js"></script>
+	</body>
+
+</html>

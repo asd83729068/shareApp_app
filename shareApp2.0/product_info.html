@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<title>分享APP商城</title>
+		<meta name="keywords" content="分享APP商城" />
+		<meta name="description" content="分享APP商城" />
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta content="telephone=no" name="format-detection" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-store,must-revalidate" />
+		<meta http-equiv="Expires" content="0" />
+		<!--适配样式-->
+		<link rel="stylesheet" type="text/css" href="css/adapt.css">
+		<link rel="stylesheet" type="text/css" href="css/product_info.css">
+		<link rel="stylesheet" type="text/css" href="css/share.css">
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/pictureChange.css">
+
+	
+		<!-- 加载基本类库 -->
+
+	</head>
+
+	<body style="background: #FFFFFF;" data="ui_bottom" id="product_info">
+		<div style="height: 0rem">
+			<input id="copy-num" class="form-control" type="text" value="" style="width:100%;display:inline-block;border:#F9F7FA; margin-top:12px;">
+		</div>
+		
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <!--<div><img src="images/icon/back.png" style="width: 10%;"></div>-->
+		    <h1 class="mui-title"></h1>
+		</header>
+		<!--商品图片头部-->
+		<div class="product--header">
+			<div class="product-box">
+				<div class="product-img">
+					<img src="css/images/b8.png" id="cover" style="border-radius:8px 8px 0 0;">
+				</div>
+			</div>
+			<div class="product-img-bottom">
+				<img src="css/images/b2.png">
+				<div class="product-name" id="commodity_name"></div>
+				<div class="product-price" id="commodity_prices"></div>
+				<div class="product-commission" id="commodity_commission"></div>
+			</div>
+		</div>
+
+		<div class="order">
+			<!--<img src="images/share/xian.png" style="width: 6rem;" />
+			<p style="display: inline-block; margin: 0 1.16rem; font-size: 0.6rem;">图文详情</p>
+			<img src="images/share/xian.png" style="width: 6rem;" />-->
+			<img src="images/proline.png" style="width: 92%;">
+		</div>
+		
+		<div class="product-a" id="product-a" onclick="getProducturl(this)" data="">
+			<button style="margin-left: 6.8rem;">购买商品入口</button>
+		</div>
+		
+		<div class="productinfo-content" id="commodityIntroduction">
+
+		</div>
+
+		<div style="height:5.5rem;"></div>
+
+		<div class="menu-max">
+			<div type="botton" class="productinfo-bottom" id="another" onClick="toshare2(this)">
+				<img src=" css/images/wz.png">
+			</div>
+			<!--<ul class="list" id="comm_menu"></ul>-->
+		</div>
+
+		<div class="am-share">
+			<!--<h3 class="am-share-title">分享到</h3>-->
+			<div style="background-color: #FFFFFF; padding-top: 1.5rem;display: flex;
+    align-items: center;
+    justify-content: center;">
+				<!--<img src="images/share/xian.png" style="width: 6.6rem;" />
+				<p style="display: inline-block; margin: 0 1.16rem;">分享到&nbsp;&nbsp;</p>
+				<img src="images/share/xian.png" style="width: 6.6rem;" />-->
+				<img src="images/shareline.png" style="width: 85%;">
+			</div>
+			<ul class="am-share-sns">
+				<li>
+					<a href="#" id="qqzone" onclick="qq()"> <i class="share-icon-weibo"><img src="images/share/qq@2x.png"/></i> <span>QQ</span> </a>
+				</li>
+				<li>
+					<a href="#" id="wechat" onclick="shareweixin1()"> <i class="share-icon-weibo"><img src="images/share/weixin.png"/></i> <span>微信好友</span> </a>
+				</li>
+				<li>
+					<a href="#" id="wechat" onclick="shareweixin2()"> <i class="share-icon-weibo"></i> <span>朋友圈</span> </a>
+				</li>
+				<li>
+					<a href="#" id="sina" onclick="sina()"> <i class="share-icon-weibo"><img src="images/share/weibo.png"/></i> <span>新浪微博</span> </a>
+				</li>
+				<li>
+					<a href="#" onclick="jsCopy2()"> <i class="share-icon-weibo"><img src="images/share/link.png"/></i> <span>复制链接</span> </a>
+				</li>
+			</ul>
+			<div class="am-share-footer"><button class="share_btn">取消</button></div>
+		</div>
+		<!--公共底部    End-->
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<script src="js/mui.zoom.js"></script>
+		<script src="js/mui.previewimage.js"></script>
+		<script>
+			mui.previewImage();
+		</script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/api.js"></script>
+		<script type="text/javascript" src="js/commpage_center.js"></script>
+		<script type="text/javascript" src="js/product_info.js"></script>
+		<script type="text/javascript" src="js/share2.js"></script>
+	</body>
+
+</html>

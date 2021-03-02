@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+     <title>分享APP商城</title>
+    <meta name="keywords" content="分享APP商城" />
+    <meta name="description" content="分享APP商城" />
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-store,must-revalidate" />
+    <meta http-equiv="Expires" content="0" />
+    <!--适配样式-->
+    <link rel="stylesheet" type="text/css" href="css/adapt.css">
+    <link rel="stylesheet" type="text/css" href="css/my_center.css">
+    
+    <!-- 加载QQ客服 -->
+</head>
+<body id="backcolor" data="mycenter.html">
+    <div id="headerbox"></div>
+<div style="    background-color: #FFFFFF;
+    padding-top: 1.11rem;
+    padding-bottom: 1.42rem;">
+    <div class="userinfo clearfloat" style="position: relative;">
+    	<div style="    border-radius: 50px;
+    z-index: 3;
+    overflow: hidden;
+    display: grid;" id="icon_1" onclick="icon()">
+    		<img src="images/touxiang.png" id="icon" style="
+    width: 3.61111111111rem;">
+    	</div>
+    	
+    		<img src="" id="sex" style="position: absolute;
+    top: 1.7222222222rem;
+    width: 0.777777777rem;
+    left: 5.7222222rem;" />
+    
+     <div class="name" id="nickname" style="position: absolute;
+    left: 7.0277778rem;
+    top: 1.75rem;
+    font-size: 0.76111111111rem;
+    color: #FFFFFF;" onclick="info()"></div>
+    
+    <div class="gradename" style="position:absolute;left: 5.52222rem;
+    top: 3.4444444rem;
+    display: inline-block;
+    width: 6rem;
+    text-align: left;
+    font-size: 0.6444444rem;
+    color: aliceblue;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;" id="truename_1" onclick="info()"><span id="truename"></span></div>
+    
+    <div class="reward" id="reward" style="position:absolute;left: 12.444444rem;
+    top: 3.4722222rem;
+    font-size: 0.6rem;
+    color: #F0DB8B;" onclick="reward()"><p id="reward"></p></div>
+    	
+	</div>
+
+</div>
+        <a href="center_userinfo.html" class="u-link-item f-border-bottom judge" style="margin-top:2.6666666rem;">
+        <div class="u-link-item-inner">
+        	
+            <div class="u-link-item-left">
+            	<img src="images/info2.png" style="width: 0.83333333rem;" />
+                我的信息
+            </div>
+ 
+            <div class="u-link-item-right u-hint">
+                <img src="images/jiantou.png" style="width: 0.305555rem;"/>
+            </div>
+            
+        </div>
+    </a>
+
+    
+    
+    <a href="setting.html" class="u-link-item f-border-bottom judge" style="margin-top:0.6111111rem;">
+        <div class="u-link-item-inner">
+            <div class="u-link-item-left">
+            	<img src="images/setting.png" style="width: 0.93333333rem;"/>
+              帮助与反馈
+            </div>
+            <div class="u-link-item-right u-hint">
+                <img src="images/jiantou.png" style="width: 0.305555rem;"/>
+            </div>
+        </div>
+    </a>
+     <!--<a href="phone_binding.html" class="u-link-item f-border-bottom judge" >
+        <div class="u-link-item-inner">
+            <div class="u-link-item-left">
+            	<img src="images/setting.png" style="width: 0.93333333rem;"/>
+              绑定手机号
+            </div>
+            <div class="u-link-item-right u-hint">
+                
+            </div>
+        </div>
+    </a>-->
+    
+	<!--退出--登录-->
+	<div onclick="loginout()" class="u-link-item f-border-bottom loginout" style="margin-top:0.6111111rem;">
+		<div class="u-link-item-inner">
+			<div class="u-link-item-left" id="loginout">
+				<img src="images/outlogin.png" style="width: 0.92rem;" />
+				退出
+			</div>
+			<div class="u-link-item-right u-hint">
+			</div>
+		</div>
+	</div>
+  
+    
+       <div style="height:2.5rem;"></div>
+    <div class="menu-max">
+        <ul class="list" id="comm_menu">
+        </ul>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/mui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/api.js"></script>
+    <script type="text/javascript" src="js/commpage_center.js"></script>
+    <script type="text/javascript" src="js/my_center.js"></script>
+	<script type="text/javascript" src="js/wcPop.js"></script>
+	
+</body>
+
+</html>
+
+

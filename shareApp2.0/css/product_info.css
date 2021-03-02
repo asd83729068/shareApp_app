@@ -1,0 +1,126 @@
+.product--header{
+	padding:1.25rem 1.722222rem 0 1.722222rem;
+	margin-top: 50px;
+}
+.product-box{
+	position: relative;
+	width: 100%;
+	height: 9.388888888rem;
+	box-shadow:0 6px 25px -6px #9148F7;
+	border-radius:5px 5px 0 0;
+}
+
+.product-img{
+	
+}
+.product-img img{
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.product-img-bottom{
+	height: 3.2777777777rem;
+	position: relative;
+	padding: ;
+	z-index: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+		border-radius: 0 0 5px 5px;
+	box-shadow: 0 6px 20px #AFDEFA;
+}
+.product-img-bottom img{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+.product-name {
+	position: absolute;
+	color: #FFFFFF;
+	z-index: 5;
+	font-size: 0.666666rem;
+	top: 0.88888rem;
+	left: 1.16666rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.product-name span{
+	display: block;
+	width: 15rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.product-price{
+	position: absolute;
+	color: #F9DC86;
+	z-index: 5;
+	font-size: 0.5rem;
+	top: 2.0555555rem;
+	left: 1.16666rem;
+}
+
+.product-commission{
+	position: absolute;
+	color: #F9DC86;
+	z-index: 5;
+	font-size: 0.5rem;
+	top: 2.0555555rem;
+	left: 11.16666rem; 
+}
+
+/*图文*/
+.product-a{
+
+}
+
+.product-cut{
+	
+}
+.product-cut .line{
+}
+
+.product-cut .cut-centent{
+	
+}
+.order { 
+	padding:0.8rem 1rem 0 1rem;
+    text-align: center;*/
+}
+  
+.order .txt {  
+	
+    color: #555;
+    vertical-align: middle;  
+    font-size: 0.5rem;
+}
+
+
+/*p {text-indent: 1.2rem;}*/
+.productinfo-content{
+	padding:1.25rem 1.722222rem 0 1.722222rem;
+	font-size: 0.678rem;
+	color: #7B7A7A;
+}
+.productinfo-content img{
+	margin-top: -7px;
+	max-width: 100%;
+}
+.productinfo-content video{
+
+	max-width: 100%;
+}
+
+.productinfo-bottom{
+	position: relative;
+}
+
+.productinfo-bottom img{
+	position: absolute;
+	bottom:0;
+	width: 100%;
+}

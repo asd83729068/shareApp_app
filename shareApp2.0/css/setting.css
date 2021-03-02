@@ -1,0 +1,18 @@
+.aboutmore{
+	height: 2.2rem;
+	width: 100%;
+	background: #FFFFFF;
+	line-height: 2.2rem;
+	font-size: 0.82rem;
+	margin-top: 0.8rem;
+}
+
+.aboutmore span:nth-child(1){
+	float: left;
+	margin-left: 1.8rem;
+}
+
+.aboutmore span:nth-child(2){
+	float: right;
+	margin-right: 1.8rem;
+}

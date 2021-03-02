@@ -1,0 +1,129 @@
+/*以下body金额*/
+
+.myproducts-body{
+	padding-left:0.88888rem;
+	font-size: 0.597222rem;
+	position: relative;
+	width: 92%;
+	
+}
+.myproducts-ul-hearder{
+	width: 100%;
+	background-color: #FFFFFF;
+	padding-top: .45666rem;
+}
+.myproducts-ul-hearder li{
+	height: 2.3611111rem;
+	line-height: 2.3611111rem;
+	
+}
+.myproducts-ul-hearder div{
+	float: left;
+	text-align: center;
+	overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+/****ul****/
+.myproducts-ul{
+	width: 100%;
+	color: #5BCCFD;
+	padding-bottom: 2.86666rem;
+}
+.myproducts-ul li{
+	height: 4.416666rem;
+	line-height: 4.416666rem;
+	border-bottom: #333333 dashed thin;
+	
+}
+.myproducts-ul div:nth-child(1){
+	float: left;
+	
+}
+.myproducts-ul div:nth-child(2){
+	float: left;
+	text-align: center;
+}
+.myproducts-ul div:nth-child(3){
+	float: left;
+	text-align: center;
+	overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+
+.myproducts-li-header .myproducts-title{
+	width: 61%;
+}
+.myproducts-li-header .myproducts-times{
+	width: 19%;
+}
+.myproducts-li-header .myproducts-withdraw{
+	width: 14%;
+}
+
+.myproducts-li-header{
+	color: #5BCCFD;
+	/*background-color: #FFFFFF;*/
+}
+.myproducts-li-header div{
+	color: #545353;
+	font-size: 0.597222rem;
+}
+.myproducts-title{
+	width: 62%;
+}
+.myproducts-times{
+	text-align: left;
+	width: 20%;
+}
+.myproducts-withdraw{
+	width: 17%;
+}
+
+
+.myproducts-bottom{
+	padding-top: 1.5rem;
+	background-color: #FFFFFF;
+}
+
+
+
+
+/*     */
+.myproducts-title{
+	
+}
+
+.myproducts-img{
+	width: 36%;
+	height: 2.77777rem;
+	margin-top: 0.861111rem;
+	
+}
+
+.myproducts-img img{  
+	top: 0.86111rem;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0 4px 10px #A4A2A9;
+    height: 100%;
+} 
+.myproducts-name{
+	width: 60%;
+	right: 0;
+	line-height: 1rem;
+	margin-top: 1.7rem;
+	overflow:hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap
+    
+}
+/*无分享商品*/
+.myproducts-none span{
+	position: absolute;
+	left: 8rem;
+	top: 1rem;
+	font-size: 0.6319rem;
+	color: #7B7A7A;
+}

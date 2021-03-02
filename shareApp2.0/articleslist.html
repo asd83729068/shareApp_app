@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head lang="en">
+		<title>51纷享</title>
+		<meta name="keywords" content="分享APP商城" />
+		<meta name="description" content="分享APP商城" />
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta content="telephone=no" name="format-detection" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-store,must-revalidate" />
+		<meta http-equiv="Expires" content="0" />
+		<!--适配样式-->
+		<link rel="stylesheet" type="text/css" href="css/adapt.css">
+		<link rel="stylesheet" type="text/css" href="css/box_orthogon.css">
+		<link rel="stylesheet" type="text/css" href="css/articleslist.css">
+		<link rel="stylesheet" type="text/css" href="css/share.css">
+		<link rel="stylesheet" href="css/mescroll.min.css">
+		
+		<!-- 加载基本类库 -->
+		<style type="text/css">
+			/*body为滚动区域,本案例特意演示有标题的界面,需padding-top显示出下拉区域,此时滚动条会穿过标题,从而说明body为滚动区域适用于没有标题的界面
+			 
+			 * 与其他配置div案例的区别:
+			 * 1.无需写<div id="mescroll" class="mescroll">,无需设置mescroll的高度
+			 * 2.new Mescroll固定id为"body"
+			 * 3.在微信,QQ,Safari等等iOS浏览器访问时,会有一点几率出现顶部下拉和底部上拉露出浏览器灰色背景,但不会卡顿2秒
+			 * 4.滚动条会穿过标题,贯穿整个body
+			 * */
+			
+			* {
+				margin: 0;
+				padding: 0;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-webkit-tap-highlight-color: transparent;
+			}
+			
+			body {
+				background-color: white
+			}
+			
+			ul {
+				list-style-type: none
+			}
+			
+			a {
+				text-decoration: none;
+				color: #18B4FE;
+			}
+			
+			body {
+				padding-top: 84px;
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+			}
+			
+			.mescroll {
+				position: fixed;
+				top: 44px;
+				bottom: 51px;
+				height: auto;
+				/*如设置bottom:51px,则需height:auto才能生效*/
+			}
+		</style>
+
+	</head>
+
+	<body style="background: #fff;" id="box" data="articleslist.html">
+		<div style="height: 0rem">
+			<input id="copy-num" class="form-control" type="text" value="" style="max-width:0.1px;display:inline-block;border:#FFFFFF; margin-top:12px">
+		</div>
+		<div id="headerbox"></div>
+
+		<div class="smalltitle">
+			<img src="css/images/juxing9.png">
+			<img src="css/images/allowShare.png">
+		</div>
+		<div class="article-list" id="dataList">
+			
+
+		</div>
+
+		<!--<div class="article-bottom"></div>-->
+		<!--<div style="height:2.5rem;"></div>-->
+		<div class="menu-max">
+			<ul class="list" id="comm_menu"></ul>
+		</div>
+
+		<div class="am-share">
+			<!--<h3 class="am-share-title">分享到</h3>-->
+			<div style="background-color: #FFFFFF; padding-top: 1.5rem;display: flex;
+    align-items: center;
+    justify-content: center;">
+				<!--<img src="images/share/xian.png" style="width: 6.6rem;"/>
+  	<p style="display: inline-block; margin: 0 1.16rem;">分享到&nbsp;&nbsp;</p>
+  	<img src="images/share/xian.png" style="width: 6.6rem;"/>-->
+				<img src="images/shareline.png" style="width: 85%;">
+			</div>
+			<ul class="am-share-sns">
+				<li>
+					<a href="#" id="qqzone"> <i class="share-icon-weibo"><img src="images/share/qq@2x.png"/></i> <span>QQ</span> </a>
+				</li>
+				<li>
+					<a href="#" id="wechat" onclick="weixin1()"> <i class="share-icon-weibo"><img src="images/share/weixin.png"/></i> <span>微信好友</span> </a>
+				</li>
+				<li>
+					<a href="#" id="wechat" onclick="weixin2()"> <i class="share-icon-weibo"></i> <span>朋友圈</span> </a>
+				</li>
+				<li>
+					<a href="#" id="sina" onclick="sina()"> <i class="share-icon-weibo"><img src="images/share/weibo.png"/></i> <span>新浪微博</span> </a>
+				</li>
+				<li>
+					<a href="#" onclick="jsCopy()"> <i class="share-icon-weibo"><img src="images/share/link.png"/></i> <span>复制链接</span> </a>
+				</li>
+			</ul>
+			<div class="am-share-footer"><button class="share_btn">取消</button></div>
+		</div>
+		
+		<!--公共底部    End-->
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/api.js"></script>
+		<script type="text/javascript" src="js/commpage_center.js"></script>
+		<script src="js/mescroll.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/articleslist.js"></script>
+		<script type="text/javascript" src="js/share.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,100 @@
+/*以下body金额*/
+
+.myarticles-body{
+	padding-left:0.88888rem;
+	padding-right:0.88888rem;
+	font-size: 0.597222rem;
+	position: relative;
+	width: 82%;
+}
+
+.empty-btn{
+	font-size: 0.597222rem;
+}
+
+.myarticles-ul{
+
+	position: absolute;
+	width: 100%;
+	color: #5BCCFD;
+	margin-bottom: 4rem;
+	/*margin-bottom: 15rem;*/
+}
+.myarticles-ul li{
+	height: 2.3611111rem;
+	line-height: 2.3611111rem;
+	border-bottom: #333333 dashed thin;
+	
+}
+.myarticles-ul div{
+	float: left;
+	width: 33%;
+	text-align: center;
+	overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+
+.myarticles-ul div:nth-child(1){
+	float: left;
+	width: 60%;
+	text-align: center;
+}
+.myarticles-ul div:nth-child(2){
+	float: left;
+	width: 19%;
+	text-align: center;
+}
+.myarticles-ul div:nth-child(3){
+	float: left;
+	width: 19%;
+	text-align: center;
+}
+
+.myarticles-li-header{
+	color: #5BCCFD;
+	/*background-color: #FFFFFF;*/
+	margin-top: 0.4rem;
+}
+.myarticles-li-header div{
+	color: #545353;
+	font-size: 0.597222rem;
+}
+.myarticles-title{
+	
+}
+.myarticles-times{
+	
+}
+.myarticles-withdraw{
+	
+}
+
+
+.myarticles-bottom{
+	padding-top: 2.75rem;
+	background-color: #FFFFFF;
+}
+
+/*无分享文章*/
+.myarticles-none span{
+	position: absolute;
+	left: 8rem;
+	top: 3rem;
+	font-size: 0.6319rem;
+	color: #7B7A7A;
+}
+
+.myarticle_bottom{
+	position: absolute;
+	bottom:3.6333rem;
+	height:1.472rem;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+.testbottom{
+	position: absolute;
+	height:1.472rem;
+	width: 100%;
+	background-color: #FFFFFF;
+}

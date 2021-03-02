@@ -1,0 +1,251 @@
+﻿
+ .dt-btns {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    height: 3.21667rem;
+}
+ 
+ .dt-btns .left {
+   width:70%;
+   float:left;
+    height: 3.21667rem;
+    text-align:center;
+     line-height: 3.21667rem;
+}
+ 
+ .dt-btns .left .select{
+   float:left;
+       padding-left: .82667rem;
+     line-height: 3.21667rem;
+         font-size: .86889rem;
+}
+
+ 
+ .dt-btns .left .select .txt{
+       padding-left: .82667rem;
+}
+
+
+
+
+
+ .m-checkbox, .m-checkbox-1 {
+    background-image: url('../images/icon/checkbox-sa1bffb087e-9e765998d8.png');
+    background-repeat: no-repeat;
+    background-size: 1.0rem 9.02778rem;
+    width: 1.0rem;
+    height: 1.0rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ .m-checkbox {
+    background-position: 0 -8rem;
+}
+ .m-checkbox.checked {
+    background-position: 0 -5.36667rem;
+}
+ .dt-btns .left .price{
+   float:right;
+   margin-right: .82667rem;
+     line-height: 3.21667rem;
+         font-size: .86889rem;
+         color:#ff6a00;
+}
+
+
+
+ 
+ .dt-btns .right {
+   width:30%;
+   float:left;
+    height: 3.21667rem;
+    text-align:center;
+    line-height: 3.21667rem;
+    background-color:#ff6a00;
+    color:#fff;
+    
+}
+ 
+ .dt-btns .right.failed {
+    background-color:#ccc;
+    
+}
+ 
+.carlist {
+    background-color:#fff;
+}
+.carlist li{
+    border-bottom:1px solid rgba(246, 246, 246, 1);
+}
+
+.carlist .list{
+    background-color:#fff;
+    padding-top:.54rem;
+    padding-bottom:.54rem;
+    overflow:hidden;
+}
+.carlist .list .left{
+    width:1.75rem;
+    padding-left:.75rem;
+    float:left;
+    height:4rem;
+    line-height:4rem;
+}
+
+
+.carlist .list .left_2{
+    width:4rem;
+    margin-left:.75rem;
+    float:left;
+    background-color:#f4f4f4;
+
+}
+.carlist .list .left_2 img{
+    width: 4rem;
+    height:4rem;
+    display:block;
+}
+
+.carlist .list .left_3{
+    margin-left:.75rem;
+    float:left;
+   width: 10rem;
+}
+
+.carlist .list .left_3 .line1 {
+           line-height: 1.29888rem;
+    font-size: .81889rem;
+    margin-bottom: .27889rem;
+    overflow: hidden;
+display:block;white-space:nowrap;  text-overflow:ellipsis;
+}
+
+
+.carlist .list .left_3 .line1 .name {
+    max-width: 26rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.carlist .list .left_3 .line1 .num {
+    padding-left:1rem;
+}
+
+
+.carlist .list .left_3 .line2 {
+    font-size: .66333rem;
+    line-height: .76889rem;
+    margin-bottom: .54778rem;
+    color: #666;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.carlist .list .left_3 .line3 {
+    font-size: .76889rem;
+    line-height: .88444rem;
+}
+
+
+.carlist .list .right{
+    width:1.75rem;
+    float:right;
+    height:4rem;
+}
+.carlist .list .right i{
+
+    position:relative;
+    width: 1rem;
+    height: 1rem;
+    border-radius: .85rem;
+    background-color: #fff;
+    text-align: center;
+    border:1px solid #ff6a00;
+    line-height: .8rem;
+    font-size: 1rem;
+    color: #ff6a00;
+    font-style: normal;
+    width: 1.0rem;
+    height: 1.0rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.carlist .list .car-numlist{
+    position:relative;
+    top:2rem;
+    left:65%;
+    width: 30%;
+    height: 1.82222rem;
+    border:1px solid #ccc;
+}
+
+
+.carlist .list .car-numlist .numleft{
+   float:left;
+   width:25%;
+    height: 1.82222rem;
+   position:absolute;
+   text-align:center;
+    line-height: 1.82222rem;
+    font-size:1rem;
+}
+.carlist .list .car-numlist .nummiddle{
+   float:left;
+   width:50%;
+    height: 1.82222rem;
+    line-height: 1.82222rem;
+   text-align:center;
+   position:absolute;
+   left:25%;
+   
+}
+.carlist .list .car-numlist .numright{
+   float:left;
+   width:25%;
+    height: 1.82222rem;
+   text-align:center;
+   position:absolute;
+    line-height: 1.82222rem;
+   left:75%;
+   text-align:center;
+}
+
+.container {
+    position: absolute;
+    top: -.69444rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 8.16667rem;
+    margin: auto;
+    width:100%;
+    text-align:center;
+}
+
+
+
+.container .img {
+    background-image: url('../images/icon/noCart-a8fe3f12e5.png');
+}
+.container .img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 6.84444rem;
+    height: 6.84444rem;
+    margin-bottom: .11111rem;
+    background-size: 6.84444rem 6.84444rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.container .txt {
+    font-size: .76889rem;
+    line-height: 2;
+    color: #999;
+}

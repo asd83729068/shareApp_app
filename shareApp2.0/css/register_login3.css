@@ -1,0 +1,165 @@
+﻿#ico-top{
+	width: 100%;
+	padding-top: 3.7777777rem;
+}
+#ico{
+	margin: auto;
+	width: 4.7222222rem;
+	height: 4.7222222rem;
+	overflow: hidden;
+	box-shadow:0px 2px 15px #B7E1FB;
+}
+#ico img{
+	width: 100%;
+	height: 100%;
+	
+} 
+
+.g-bd {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 2.0833333rem;
+    
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+
+.g-bd  .inputbox {
+    height: 2.166666rem;
+    line-height: 2.56rem;
+    z-index: 19;
+    position: relative;
+    margin-bottom: 0px;
+    font-size: 0.6898rem;
+    border: none;
+    padding-bottom: 0.7777777px;
+    border-bottom:1px solid #c5cddb;
+    margin-top: 0.8611111rem;
+    color: #C3C1C1;
+    
+}
+
+.g-bd  .inputbox img{
+	position: absolute;
+	padding-top: 0.85rem;
+	width: 0.722222rem;
+	
+}
+
+.g-bd  .u-input {
+    width:100%;
+    margin-left: 1.7222222rem;
+    
+}
+
+.g-bd .u-input input {
+    border:0;
+    width:100%;
+    background:none;
+    height: 1.2rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    padding-left: 0;
+    -webkit-tap-highlight-color: transparent;
+    letter-spacing: normal;
+    
+}
+
+.loginbox {
+    margin:2.3055555rem 1.472222rem 0.888888rem 1.472222rem;
+    background-image:url("../css/images/login.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 2.22rem;
+    border-radius: 5px;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 0.71rem;
+    box-shadow: 6px 6px 12px #B7E1FB;
+    display: flex;
+    justify-content: center;
+    line-height: 2.22rem;)
+
+}
+
+.u-loginbtn {
+	height: 2.2222rem;
+}
+
+.u-loginbtn img{
+	margin: auto;
+	width: 13.75rem;
+	display: block;
+	box-shadow:6px 6px 12px #B7E1FB;
+}
+.m-unlogin{
+	padding: 0 1.416666rem;
+}
+.m-unlogin a {
+     color: #f6bc5b;
+    font-size: 0.5555555rem;
+}
+
+.ferrorhead {
+    width:12rem;
+    margin-top: -3px;
+    color: #fa5b5b;
+    font-size: 12px;
+    line-height: 20px;
+    vertical-align: top;
+    word-break: break-all;
+}
+.m-nerror {
+    margin-top:16px;
+}
+
+
+
+#dcontent{
+	width: 100%;
+	height: 2.5rem;
+}
+
+#oauth{
+	width: 10rem;
+	height: 2.5rem;
+	margin: auto;
+}
+
+#weixin{
+	height: 2.3rem;
+	width: 2.3rem;
+	float: left;
+
+}
+
+#weixin img{
+	width: 90%;
+	height: 90%;
+	margin: 0.1rem;
+}
+
+#qq{
+	height: 2.3rem;
+	width: 2.3rem;
+	float: left;
+	padding: 0 1.4rem;
+}
+
+#qq img{
+	width: 100%;
+	height: 100%;
+}
+
+#sinaweibo{
+	height: 2.3rem;
+	width: 2.3rem;
+	float: left;
+}
+
+#sinaweibo img{
+	width: 100%;
+	height: 100%;
+}

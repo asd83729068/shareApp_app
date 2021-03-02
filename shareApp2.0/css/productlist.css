@@ -1,0 +1,230 @@
+﻿.m-goodGrid {
+    padding-left: 7.73%;
+    padding-right: 7.73%;
+    padding-top: 0;
+}
+.m-goodGrid .list {
+    z-index: 0;
+    
+}
+.bu{
+	margin-bottom: 10rem;
+}
+.pos{
+	position: relative;
+	bottom: 30px;
+}
+
+.m-goodGrid .list .item:nth-child(2n-1){
+	padding: 0 2.9% .88888rem 0;
+}
+.m-goodGrid .list .item:nth-child(2n){
+	padding: 0 0 .88888rem 0;
+}
+.m-goodGrid .list .item {
+    float: left;
+    width: 48%;
+    /*padding: 0 0.69444rem .88888rem 0;*/
+    background-color: #fff;
+}
+.good {
+    width: 100%;
+}
+.wraper {
+    position: relative;
+    height: 6.33333rem;
+}
+.good-bottom{
+	background-image: url("../css/images/b11.png");
+	background-size: 100% 100%;
+	height: 2rem;
+	padding: 0.5rem;
+	z-index: 2;
+	position: relative;
+	padding-left: 0.5rem;
+}
+.good-bottom img{
+	z-index: 1;
+	position: absolute;
+	width: 8.5rem;
+}
+
+.name {
+    line-height: .95555rem;
+    height: .95555rem;
+    font-size: .5486111rem;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+    color: #FFFFFF;
+}
+.price {
+	margin-top: .4rem;
+    line-height: 1;
+    font-size: .5rem;
+    color: #FFFFFF;
+}
+.m-lazyload {
+    width: 100%;
+    height: 100%;
+}
+.wraper img {
+    position: absolute;
+}
+.hd img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px 7px 0 0;
+}
+.good-bottom img:nth-child(1) {
+	position: absolute;
+    width: 1.833333rem;
+    top:1.565555rem;
+    left: 0.48888rem;
+}
+/*.good-bottom img:nth-child(1) {
+	position: absolute;
+    width: 2rem;
+    top:-7.2rem;
+    left: -0.5rem;
+}
+.good-bottom img:nth-child(2) {
+	top:-6.6rem;
+    left: 0rem;
+	position: absolute;
+    width: 0.7rem;
+}
+.good-bottom img:nth-child(3) {
+	position: absolute;
+    width: 0.33333rem;
+    top:2.485555rem;
+    left: 5rem;
+}
+.good-bottom img:nth-child(4) {
+	position: absolute;
+    width: 0.33333rem;
+    top:2.485555rem;
+    left: 5.6rem;
+}
+.good-bottom img:nth-child(5) {
+	position: absolute;
+    width: 0.33333rem;
+    top:2.485555rem;
+    left: 6.2rem;
+}
+.good-bottom img:nth-child(6) {
+	position: absolute;
+    width: 0.33333rem;
+    top:2.485555rem;
+    left: 6.8rem;
+}
+.good-bottom img:nth-child(7) {
+	position: absolute;
+    width: 0.33333rem;
+    top:2.485555rem;
+    left: 7.4rem;
+}
+.good-bottom img:nth-child(8) {
+	position: absolute;
+    width: 1.833333rem;
+    top:1.805555rem;
+    left: 0.68888rem;
+}*/
+
+.hd {
+	height: 6.33333rem;
+	border-radius: 8px 8px 0 0;
+    position: relative;
+    z-index: 2;
+	padding: 0.1rem 0.1rem 0 0.1rem;
+	background-color: #3FCEFE;
+}
+
+
+
+.menu-type {
+    background-color:#fff;
+    margin-bottom:.54778rem;
+
+}
+.menu-type .list {
+    padding: 0 .58333rem;
+    height: 2.41667rem;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -moz-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+}
+.menu-type .list .item {
+    width: 2.77778rem;
+    text-align: center;
+}
+.menu-type .list .item .txt {
+    display: block;
+    line-height: 1;
+    font-size: .73333rem;
+    color: #333;
+}
+.menu-type .list .item .txt.active {
+    color: #ff6a00;
+}
+
+
+/*可分享的商品列表*/
+
+.smalltitle{
+	padding: 0.08rem 0.12222rem 0.12222rem 0.122222rem;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	color: #333;
+	position: relative;
+}
+#smalltitle-pro{
+	margin-top: 2rem;
+}
+.smalltitle img:nth-child(1){
+	position: absolute;
+	width: 0.1111111rem;
+	top: 0.27rem;
+	left:1.05555rem;
+}
+.smalltitle img:nth-child(2){
+	position: absolute;
+	width: 2rem;
+	top: 0.2rem;
+	left:1.55555rem;
+}
+.m-goodGrid{
+	    display: block;
+}
+.productlist-bottom{
+	position: absolute;
+	bottom: 0;
+	margin-top: 3.2222222rem;
+}
+
+/*主页商品列表*/
+.index_item{
+	width: 47.7%;
+	float: left;
+    
+    background-color: #fff;
+}
+.index_item:nth-child(1){
+	padding: 0 2.9% .88888rem 0;
+}
+.index_item:nth-child(2){
+}
+

@@ -1,0 +1,107 @@
+.g-bd {
+    max-width: 780px;
+    margin: 0 auto;
+ 
+    
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+
+.g-bd  .inputbox {
+    height: 2.2222rem;
+    line-height: 2.2222rem;
+    z-index: 19;
+    position: relative;
+    margin-bottom: 0px;
+    
+     border: none;
+     display: flex;
+    background-color: #FEFEFF;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px 1px #E9F0F5;
+}
+
+
+
+
+.g-bd  .u-input2 {
+    width:100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 8px 12px #EEEBFC;
+}
+
+#p_phone{
+	font-size: 0.722rem;
+}
+
+.g-bd .inputbox:nth-child(1){
+	margin: 0 .777rem;
+	margin-bottom: 0.722rem;
+}
+.g-bd .inputbox:nth-child(3){
+	margin: 0 .777rem;
+	margin-top: 0.722rem;
+}
+
+
+
+
+.u-input2 p{
+	    padding-left: 0.77rem;
+}
+
+.g-bd .u-input2 input {
+    border:0;
+    background:none;
+    height: 1.2rem;
+    font-size: 0.61rem;
+    line-height: 1.2rem;
+    padding-left: 0.5277rem;
+    -webkit-tap-highlight-color: transparent;
+    letter-spacing: normal;
+    width: 55%;
+}
+
+
+.loginbox {
+    margin-top: 2.83333rem;
+    display: flex;
+   	align-items: center;
+    justify-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 6px 20px -5px #39CBFE;
+}
+
+.u-loginbtn {
+	
+     height: 2rem;
+    font-size: 0.68rem;
+    line-height: 2rem;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background: #39CBFE;
+    box-shadow: 0px 6px 20px -5px #39CBFE;
+}
+.m-unlogin a {
+     color: #f6bc5b;
+    font-size: 0.7833333rem;
+}
+
+.ferrorhead {
+    width:12rem;
+    margin-top: -3px;
+    color: #fa5b5b;
+    font-size: 12px;
+    line-height: 20px;
+    vertical-align: top;
+    word-break: break-all;
+}
+.m-nerror {
+    margin-top:16px;
+}

@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<title>51纷享</title>
+		<meta name="keywords" content="分享APP商城" />
+		<meta name="description" content="分享APP商城" />
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta content="telephone=no" name="format-detection" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-store,must-revalidate" />
+		<meta http-equiv="Expires" content="0" />
+		<!--适配样式-->
+		<link rel="stylesheet" type="text/css" href="css/adapt.css">
+		<link rel="stylesheet" type="text/css" href="css/register_login3.css">
+		<!-- 加载基本类库 -->
+
+	</head>
+
+	<body style="height: 100%; background-color: #f7f4fb;" id="dologin" data="login.html">
+		<div id="headerbox"></div>
+		<div id="ico-top">
+			<div id="ico">
+				<img src="css/images/ShareAppLogo1.png" id="touxi">
+			</div>
+
+		</div>
+		<div style="height: 3.0rem;"></div>
+		<div class="g-bd">
+			<div class="inputbox">
+				<img src="css/images/phone.png">
+				<div class="u-input">
+					<input name="username" id="username" type="text" autocomplete="off" tabindex="1" placeholder="请输入手机号" />
+				</div>
+			</div>
+
+			<div class="inputbox">
+				<img src="css/images/password.png">
+				<div class="u-input">
+					<input name="password" id="password" type="password" autocomplete="off" tabindex="1" placeholder="请输入密码" />
+				</div>
+			</div>
+
+			<div class="m-nerror" style="display:none;" id="nerror">
+				<div class="ferrorhead" id="errinfo"></div>
+			</div>
+
+			<div class="f-cb loginbox" id="btnSubmit">
+				<a class="u-loginbtn">登录</a>
+			</div>
+
+			<div class="m-unlogin clearfix">
+				<a style="float:left;" id="register">注册</a>
+				<a style="float:right;" id="checkPhone">忘记密码</a>
+			</div>
+		</div>
+
+		<div id="aaaaaaaaaaaaaaaaaaaaaaa"></div>
+
+		<div style="height:2.5rem;"></div>
+
+		<!--第三方登录-->
+		<div id="dcontent" class="dcontent">
+			<div id="oauth">
+				<div class="button" onclick="login(this.id)" id="weixin"><img src="images/sanlogin/weixin.png"></div>
+				<div class="button" id="qq"></div>
+				<div class="button" onclick="login(this.id)" id="sinaweibo"><img src="images/sanlogin/sinaweibo.png"></div>
+			</div>
+		</div>
+
+		<div class="menu-max" style="display:none;">
+			<ul class="list" id="comm_menu">
+			</ul>
+		</div>
+
+		<!--公共底部    End-->
+		<!-- 加载QQ客服 -->
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/api.js"></script>
+		<!--<script type="text/javascript" src="js/common.js"></script>-->
+		<script type="text/javascript" src="js/commpage_center.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+		<script type="text/javascript" src="js/wcPop.js"></script>
+		<script type="text/javascript" src="js/immersed.js"></script>
+
+		<script type="text/javascript">
+			setTimeout(function() {
+				logoutAll();
+			}, 400);
+
+			setTimeout(function() {
+				var isentityoauth = document.getElementById("weixin");
+				if(isentityoauth == null) {
+					location.reload();
+				}
+			}, 1000);
+
+			var openid1 = "";
+			var gender = 0;
+			var icon = "";
+			var method = 0;
+			var nickname = "";
+			var auths = {};
+
+			function plusReady() {
+				// 获取登录认证通道
+				plus.oauth.getServices(function(services) {
+					var content = document.getElementById('dcontent');
+
+					for(var i in services) {
+						var service = services[i];
+
+						auths[service.id] = service;
+
+						//						var img = $("<img src='images/sanlogin/"+ service.id+".png'>");
+						//						var de=document.createElement('div');
+						//						de.setAttribute('class','button');
+						//						de.setAttribute('onclick','login(this.id)');
+						//						de.id=service.id;
+						//						img.appendTo(de);
+						//						oauth.appendChild(de);
+
+//						if(service.id == "sinaweibo") {
+//							break;
+//						}
+
+					}
+//					setCookie("auths",auths);
+//					for(var i in auths){
+//						alert(auths[i]);
+//					}
+				}, function(e) {
+					//					alert("页面异常，请刷新！");
+				});
+			}
+
+			document.addEventListener('plusready', plusReady, false);
+
+			// 登录认证
+			function login(id) {
+				var auth = auths[id];
+				if(auth) {
+					var w = null;
+					if(plus.os.name == "Android") {
+						w = plus.nativeUI.showWaiting();
+					}
+					document.addEventListener("pause", function() {
+						setTimeout(function() {
+							w && w.close();
+							w = null;
+						}, 2000);
+					}, false);
+					auth.login(function() {
+						w && w.close();
+						w = null;
+						if(auth.authResult.openid != null) {
+							openid1 = auth.authResult.openid;
+						} else {
+							openid1 = auth.authResult.uid;
+						}
+						if(id == "qq") {
+							method = 1;
+						}
+						if(id == "weixin") {
+							method = 2;
+						}
+						if(id == "sinaweibo") {
+							method = 3;
+						}
+						userinfo(auth);
+					}, function(e) {
+						w && w.close();
+						w = null;
+
+						//						plus.nativeUI.alert("详情错误信息请参考授权登录(OAuth)规范文档：http://www.html5plus.org/#specification#/specification/OAuth.html",null,"登录失败["+e.code+"]："+e.message);
+					});
+				} else {
+					plus.nativeUI.alert("无效的登录认证通道！", null, "登录");
+				}
+			}
+
+			// 获取用户信息
+			function userinfo(a) {
+				a.getUserInfo(function() {
+					var result = a.userInfo;
+					var article = sessionStorage.getItem("article");
+					var product = sessionStorage.getItem("product");
+					if(result.gender == "男" || result.gender == "m" || result.sex == 1) {
+						gender = 0;
+					} else {
+						gender = 1;
+					}
+
+					if(result.nickname != null || result.name != null) {
+						nickname = result.nickname;
+					} else {
+						nickname = result.name;
+					}
+
+					if(result.headimgurl != null) {
+						icon = result.headimgurl;
+					}
+					if(result.cover_image_phone != null) {
+						icon = result.cover_image_phone;
+					}
+					//登录校验
+					$.ajax({
+						url: $.cookie("tempUrl")+"/Member/checkLogin.do",
+						type: "POST",
+						datatype: "application/json",
+						contentType: "application/json;charset=utf-8",
+						data: JSON.stringify({
+							headimgUrl: "",
+							sex: gender,
+							nickname: nickname,
+							openId: openid1,
+							loginSource: method
+						}),
+						success: function(result) {
+
+							if(result.code == 0) {
+								wcPop({
+									content: '授权成功!',
+									shade: true,
+									style: 'background: rgba(17,17,17,.7); color: #fff;font-size:13px;width:200px',
+									time: 2
+								});
+								setTimeout(function() {
+
+									if(article == "article" || product == "product") {
+										sessionStorage.setItem("article", "");
+										sessionStorage.setItem("product", "");
+										mui.currentWebview.close();
+									}
+									if(result.data.phone == null || result.data.phone == "") {
+										sessionStorage.setItem("v1", result.data.truename);
+										sessionStorage.setItem("v2", result.data.accessToken);
+										sessionStorage.setItem("v3", result.data.id);
+										sessionStorage.setItem("v4", result.data.openId);
+										sessionStorage.setItem("v5", result.data.phone);
+										$.cookie('id', result.data.id, {expires: 30,path: '/'});
+										$.cookie('openId', result.data.openId, {expires: 30,path: '/'});
+										window.location.href = "phone_binding.html";
+									} 
+									if(result.data.phone != null && result.data.phone != ""){
+										$.cookie('truename', result.data.truename, {expires: 30,path: '/'});
+										$.cookie('token', result.data.accessToken, {expires: 30,path: '/'});
+										$.cookie('id', result.data.id, {expires: 30,path: '/'});
+										$.cookie('openId', result.data.openId, {expires: 30,path: '/'});
+										$.cookie('phone', result.data.phone, {expires: 30,path: '/'});
+										window.location.href = "index.html";
+									}
+
+								}, 1000);
+							} else {
+								wcPop({
+									content: '账号或密码错误!!!',
+									shade: true,
+									style: 'background: rgba(17,17,17,.7); color: #fff;font-size:13px;width:200px',
+									time: 2
+								});
+								$("#btnSubmit").text("登录");
+							}
+						},
+						error: function(result) {
+							alert("登录失败！请重试！")
+						}
+					});
+
+				}, function(e) {
+					plus.nativeUI.alert("获取用户信息失败！", null, "登录");
+				});
+			}
+
+			// 注销登录
+			function logoutAll() {
+				for(var i in auths) {
+					logout(auths[i]);
+				}
+				//				alert("注销成功！")
+			}
+
+			function logout(auth) {
+				auth.logout(function() {
+
+				}, function(e) {
+
+				});
+			}
+		</script>
+		<style type="text/css">
+			#total {
+				-webkit-user-select: text;
+				text-align: right;
+				padding: 0 1em;
+				border: 0px;
+				border-bottom: 1px solid #ECB100;
+				border-radius: 0;
+				font-size: 16px;
+				width: 30%;
+				outline: none;
+			}
+		</style>
+	</body>
+
+</html>

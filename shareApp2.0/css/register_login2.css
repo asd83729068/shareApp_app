@@ -1,0 +1,139 @@
+.g-bd {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 0.88888rem;
+    
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+
+.g-bd  .inputbox {
+    height: 2.2222rem;
+    line-height: 2.2222rem;
+    z-index: 19;
+    position: relative;
+    margin-bottom: 0px;
+    
+     border: none;
+     display: flex;
+    background-color: #FEFEFF;
+    border-radius: 5px;
+    box-shadow: 0px 7px 12px #EEEBFC;
+}
+
+#nickname{
+	position: absolute;
+	left:3.91666rem ;
+	font-size: 0.7916rem;
+}
+#password{
+	position: absolute;
+	left:3.91666rem ;
+	font-size: 0.7916rem;
+}
+#pwdcomfirm{
+	position: absolute;
+	left:5.083333rem ;
+	font-size: 0.7916rem;
+}
+
+
+.g-bd  .u-input {
+    width:100%;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.u-input p{
+	position: absolute;
+	left:1.33333rem ;
+	font-size: 0.7916rem;
+}
+
+#p_phone{
+	width: 1.972222rem;
+	font-size: 0.631rem;
+}
+
+.g-bd .inputbox:nth-child(1){
+	margin-bottom: 0.72222rem;
+}
+.g-bd .inputbox:nth-child(2){
+	margin-bottom: 0.72222rem;
+}
+
+
+.g-bd .inputbox-new{
+	margin-bottom: 1.41666rem;
+}
+
+
+.g-bd .u-input input {
+    border:0;
+    width:100%;
+    background:none;
+    height: 1.2rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    padding-left: 0;
+    -webkit-tap-highlight-color: transparent;
+    letter-spacing: normal;
+}
+
+.g-bd .u-input2 input {
+    border:0;
+    width:100%;
+    background:none;
+    height: 1.2rem;
+    font-size: 0.631rem;
+    line-height: 1.2rem;
+    padding-left: 0;
+    -webkit-tap-highlight-color: transparent;
+    letter-spacing: normal;
+}
+
+.loginbox {
+    margin-top: 2.27777rem;
+    display: flex;
+   	align-items: center;
+    flex-flow: column;
+    justify-items: center;
+        margin-right: 2.6666rem;
+    margin-left: 2.66666rem;
+     margin-bottom: 10px;
+}
+
+.u-loginbtn {
+	
+     height: 2.22222rem;
+    font-size: 0.694444rem;
+    line-height: 2.222222rem;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background: #39CBFE;
+    box-shadow: 0px 6px 20px -5px #39CBFE;
+}
+.m-unlogin a {
+     color: #f6bc5b;
+    font-size: 0.7833333rem;
+}
+
+.ferrorhead {
+    width:12rem;
+    margin-top: -3px;
+    color: #fa5b5b;
+    font-size: 12px;
+    line-height: 20px;
+    vertical-align: top;
+    word-break: break-all;
+}
+.m-nerror {
+    margin-top:16px;
+}
